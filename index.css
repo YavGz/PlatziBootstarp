@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 /* --------- header  */
 #header img {
   width: 80px;
@@ -41,11 +45,24 @@
 }
 
 /* ---------/carousel & overlay  */
+
+
 /*-------------- cards  */
 .badge {
   padding: 0.3rem 0.5rem;
 }
 /*--------------/cards  */
+
+
+/* ------------- place time  */
+.placetime {
+  color: #fff;
+}
+.placetime img{
+  width: 100%;
+}
+/* -------------/place time  */
+
 
 /* ---- footer  */
 #footer {
