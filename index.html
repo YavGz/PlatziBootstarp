@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="index.css">
     <title>PlatziConf Hawaii</title>
   </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset="57">
+  <body data-bs-spy="scroll" data-target="#navbar" data-offset="64.5">
     <!-- Header -->
-    <header>
-      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <header class="sticky-top">
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/images/platzi-logo.png" alt="Platzi logo">
@@ -30,7 +30,7 @@
                 <a class="nav-link" href="#main">La conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#speakers">Las oradores</a>
+                <a class="nav-link" href="#speakers">Los oradores</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#place-time">El lugar y la fecha</a>
@@ -48,7 +48,7 @@
     </header>
     <!-- /Header -->
     <!-- Main -->
-    <main>
+    <section id="main">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause=“false”>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
     <!-- /Main -->
     <!-- speackers -->
     <section id="speakers" class="mt-4" >
@@ -146,7 +146,7 @@
     </section>
     <!-- /speackers -->
     <!-- lugar y fecha  -->
-    <section class="placetime bg-dark">
+    <section id="place-time" class="placetime bg-dark">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-lg-6 pr-0 pl-0">
@@ -162,7 +162,7 @@
     </section>
     <!-- /lugar y fecha  -->
     <!-- Conviertete en speaker  -->
-    <section class="Conviertete-en-orador pt-2 pb-4">
+    <section id="conviertete-en-orador"  class="pt-2 pb-4">
       <div class="container">
         <div class="row">
           <div class="col text-uppercase text-center">
@@ -172,10 +172,11 @@
         </div>
         <div class="row">
           <div class="col text-center">
-            Anotate como orador para dar una charla ignite.
+            Anotate como orador para dar una <abbr data-toggle="tooltip" data-bs-placement="bottom" title="Charlas de 5 minutos">charla ignite.</abbr>
             Cuentanos de que quieres hablar.
           </div>
         </div>
+        <!-- formulario oradores -->
         <div class="row">
           <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
             <!-- form -->
@@ -207,6 +208,7 @@
             <!--/form buttons  -->
           </div>
         </div>
+        <!-- formulario oradores -->
       </div>
     </section>
     <!--/Conviertete en speaker  -->
@@ -239,10 +241,9 @@
       </div>
     </footer>
     <!-- /Footer -->
-
     <!-- Optional JavaScript -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="./index.js"></script>
   </body>
 </html>
