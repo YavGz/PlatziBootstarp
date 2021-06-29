@@ -33,13 +33,13 @@
                 <a class="nav-link" href="#speakers">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#place-time">El lugar y la fecha</a>
+                <a class="nav-link" href="#place-time">El lugar y fecha</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra">Comprar tickets</a>
+                <a class="nav-link text-platzi" href="#" data-target="#modalCompra" data-bs-toggle="modal" data-bs-target="#modalBuyTicket">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@
                   Ven a conocer a miembrosdel TEam Platzi, a otros estudiantes de Platzi y a los Oradores de primer nivel que tenemos para tí, te esperamos.
                 </p>
                 <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                <button class="btn btn-platzi" type="button">Comprar tickets</button>
+                <button class="btn btn-platzi" type="button" data-bs-toggle="modal" data-bs-target="#modalBuyTicket">Comprar tickets</button>
               </div>
             </div>
           </div>
@@ -241,6 +241,33 @@
       </div>
     </footer>
     <!-- /Footer -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalBuyTicket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar tickets</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3 form-group">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="alert alert-info" role="alert">
+              Recibiras una correo para finalizar la compra.
+            </div>            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal  -->
+
     <!-- Optional JavaScript -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
